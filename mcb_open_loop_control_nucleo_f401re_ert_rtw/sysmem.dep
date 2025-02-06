@@ -1,0 +1,2 @@
+sysmem.o: \
+ C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/STM32CubeIDE/Application/User/Core/sysmem.c

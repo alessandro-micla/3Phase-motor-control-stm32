@@ -1,0 +1,1042 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript" src="rtwshrink.js"></script><script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script><style> h3 { margin-bottom: 1ex; } h4.function {   font-size: larger; font-weight: normal;   color: #c05709;	margin-bottom: 0ex; } .description {	border-style: none;	color: DimGray; } .footnote { margin-top: 0.5ex; font-size: small; color: DimGray;} a:link { color: #0076a8 } a:visited, a:hover { color: #004b87 } ul.services { margin-top: 0.5ex; } .include { color: #992211 } a.include:link { color:inherit; text-decoration: none } a.include:hover { text-decoration: underline } a.fcn:link { color:inherit; text-decoration: none } a.fcn:hover { text-decoration: underline } code.usage { white-space: pre-wrap; } .programlisting {   margin-left: 4ex; margin-right: 4ex;   margin-top: 2ex;  margin-bottom: 2ex; } .tooltip { position: relative; display: inline-block; } .tooltip .tooltip-text {   visibility: hidden;   position: absolute;   top: 110%;   left: 0;   background-color: white;   z-index: 1;   box-shadow: 5px 5px 10px 5px Gainsboro;   border-radius: 10px;   padding: 10px 15px 0px; } .tooltip:hover .tooltip-text { visibility: visible; } .tooltip-text .footnote { white-space: nowrap;} </style><title>
+Code Interface Report for mcb_open_loop_control_nucleo_f401re
+</title>
+
+</head>
+<body>
+<h1>
+Code Interface Report for mcb_open_loop_control_nucleo_f401re
+</h1>
+<div>
+
+</div>
+<div id="table_of_contents">
+<h3>
+Table of Contents
+</h3>
+<ol>
+<li>
+<a href="#sec_introduction" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_001_control'), 'rtwIdDataInterface_table_001')">
+Introduction
+</a>
+
+</li>
+<li>
+<span>
+<a href="#sec_execution" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+Function Interfaces
+</a>
+<ul>
+<li>
+<a href="#sec_initialize_functions" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+Initialize Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_terminate_functions" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+Terminate Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_periodic_functions" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+Periodic Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_aperiodic_functions" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+Aperiodic Functions
+</a>
+
+</li>
+
+</ul>
+</span>
+
+</li>
+<li>
+<span>
+<a href="#sec_data_interfaces" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+Data Interfaces
+</a>
+<ul>
+<li>
+<a href="#sec_inports" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_outports" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_interface_parameters" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_data_stores" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+Internal data
+</a>
+
+</li>
+
+</ul>
+</span>
+
+</li>
+
+</ol>
+
+</div>
+<h2 name="sec_Introduction" id="sec_introduction">
+1. Introduction <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdDataInterface_table_001_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdDataInterface_table_001', false)"><span class="shrink-button">[<u>show</u>]</span></span>
+</h2>
+<table width="100%" style="display: none" name="rtwIdDataInterface_table_001" id="rtwIdDataInterface_table_001" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+The code generator produced a data code interface for the model. The code interface report summarizes the interface code for model callable entry-point functions and data interface elements, such as root-level inports and outports.
+</p>
+
+</td>
+
+</tr>
+
+</table>
+<h2 name="sec_Function_Interfaces" id="sec_execution">
+2. Function Interfaces <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdDataInterface_table_002_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdDataInterface_table_002', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h2>
+<table width="100%" name="rtwIdDataInterface_table_002" id="rtwIdDataInterface_table_002" border="0">
+<tr>
+<td align="left" valign="top">
+External code initiates execution of the generated code by calling entry-point functions generated for the model. The type of function code that the code generator produces for a model depends on the modeling style and periodic rates represented in the model. For more information, see <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'helpview(fullfile(docroot,\'toolbox\',\'ecoder\',\'helptargets.map\'),\'model_entry_points\')'})" >Configure Generated C Function Interface for Model Entry-Point Functions</a><br><br>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<section id="sec_initialize_functions">
+<h3>
+2.1 Initialize Functions
+</h3>
+<p>
+Initialize entry-point functions implement startup behavior. In a model, Initialize Function blocks represent startup behavior explicitly.
+</p>
+<div id="fcn_mcb_open_loop_control_nucleo_f401re_initialize">
+<h4 class="function">
+mcb_open_loop_control_nucleo_f401re_initialize
+</h4>
+<span class="description">
+Initialization entry point of generated code
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'mcb_open_loop_control_nucleo_f401re.h'})" class="include">mcb_open_loop_control_nucleo_f401re.h</a>"</span>
+void <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'mcb_open_loop_control_nucleo_f401re_initialize'})" class="fcn">mcb_open_loop_control_nucleo_f401re_initialize</a>(void)</code>
+</div>
+</div>
+</section>
+<section id="sec_terminate_functions">
+<h3>
+2.2 Terminate Functions
+</h3>
+<p>
+Terminate entry-point functions implement shutdown behavior. In a model, Terminate Function blocks represent shutdown behavior explicitly.
+</p>
+<div id="fcn_mcb_open_loop_control_nucleo_f401re_terminate">
+<h4 class="function">
+mcb_open_loop_control_nucleo_f401re_terminate
+</h4>
+<span class="description">
+Termination entry point of generated code
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'mcb_open_loop_control_nucleo_f401re.h'})" class="include">mcb_open_loop_control_nucleo_f401re.h</a>"</span>
+void <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'mcb_open_loop_control_nucleo_f401re_terminate'})" class="fcn">mcb_open_loop_control_nucleo_f401re_terminate</a>(void)</code>
+</div>
+</div>
+</section>
+<section id="sec_periodic_functions">
+<h3>
+2.3 Periodic Functions
+</h3>
+<p>
+Periodic entry-point functions implement model behavior that occurs at a fixed sampling rate. For a rate-based model, the code generator produces a periodic entry-point function for each rate used in the model. In a function-call (export-function) model, Function Call Subsystem blocks that specify a sampling rate represent periodic functions.
+</p>
+<div id="fcn_mcb_open_loop_control_nucleo_f401re_step">
+<h4 class="function">
+mcb_open_loop_control_nucleo_f401re_step
+</h4>
+<span class="description">
+Output entry point of generated code. Must be called periodically, every 0.2 seconds. 
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'mcb_open_loop_control_nucleo_f401re.h'})" class="include">mcb_open_loop_control_nucleo_f401re.h</a>"</span>
+void <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'mcb_open_loop_control_nucleo_f401re_step'})" class="fcn">mcb_open_loop_control_nucleo_f401re_step</a>(void)</code>
+</div>
+</div>
+</section>
+<section id="sec_aperiodic_functions">
+<h3>
+2.4 Aperiodic Functions
+</h3>
+<p>
+Aperiodic (asynchronous) entry-point functions implement component behavior occurring asynchronously. In a function-call (export-function) model, Function Call Subsystem blocks that do not specify a sampling rate represent aperiodic functions.
+</p>
+<p>
+No aperiodic functions represented in model.
+</p>
+</section>
+
+</td>
+
+</tr>
+
+</table>
+<h2 name="sec_Data_Interfaces" id="sec_data_interfaces">
+3. Data Interfaces <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdDataInterface_table_003_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdDataInterface_table_003', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h2>
+<table width="100%" name="rtwIdDataInterface_table_003" id="rtwIdDataInterface_table_003" border="0">
+<tr>
+<td align="left" valign="top">
+A data code interface maps model data interface elements, such as root-level inports and outports, to storage classes. A storage class specifies the appearance and placement of data elements in the generated code. Storage classes apply direct-access data communication. The list of storage classes available for mapping is determined by the Embedded Coder Dictionary that is associated with the model. You map model interface elements to storage classes in the model code mappings.<br><br>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<section id="sec_inports">
+<h3>
+3.1 Inports
+</h3>
+Inputs are variables that are generated in the code based on storage class specifications for model root-level input ports.<p>
+No inport is present in model.
+</p>
+</section>
+<section id="sec_outports">
+<h3>
+3.2 Outports
+</h3>
+Outputs are variables that are generated in the code based on storage class specifications for model root-level output ports.<p>
+No outport is present in model.
+</p>
+</section>
+<section id="sec_interface_parameters">
+<h3>
+3.3 Parameters
+</h3>
+Parameters are variables in the generated code that represent model parameters and model parameter arguments. The variable is generated based on a storage class specification and flagged to be tunable or not tunable while the model code executes in the target environment.<div id="fcn_mcb_open_loop_control_nucleo__P.Ts">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Ts
+</h4>
+<span class="description">
+Parameters for Ts
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Ts;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.BitwiseOR1_BitMask">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.BitwiseOR1_BitMask
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3965\')'})"  name="code2model" class="code2model">&lt;S2&gt;/Bitwise OR1</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  uint16_T BitwiseOR1_BitMask;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.BitwiseOR_BitMask">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.BitwiseOR_BitMask
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3963\')'})"  name="code2model" class="code2model">&lt;S2&gt;/Bitwise OR</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  uint16_T BitwiseOR_BitMask;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.UniformRandomNumber_Minimum">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.UniformRandomNumber_Minimum
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3946\')'})"  name="code2model" class="code2model">&lt;S49&gt;/Uniform Random Number</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real_T UniformRandomNumber_Minimum;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.UniformRandomNumber_Maximum">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.UniformRandomNumber_Maximum
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3946\')'})"  name="code2model" class="code2model">&lt;S49&gt;/Uniform Random Number</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real_T UniformRandomNumber_Maximum;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.UniformRandomNumber_Seed">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.UniformRandomNumber_Seed
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3946\')'})"  name="code2model" class="code2model">&lt;S49&gt;/Uniform Random Number</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real_T UniformRandomNumber_Seed;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Constant1_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Constant1_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3668\')'})"  name="code2model" class="code2model">&lt;S15&gt;/Constant1</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Constant1_Value;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Constant_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Constant_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3373\')'})"  name="code2model" class="code2model">&lt;S15&gt;/Constant</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Constant_Value;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.sqrt3_by_two_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.sqrt3_by_two_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1177:492\')'})"  name="code2model" class="code2model">&lt;S36&gt;/sqrt3_by_two</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T sqrt3_by_two_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.one_by_two_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.one_by_two_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1177:493\')'})"  name="code2model" class="code2model">&lt;S36&gt;/one_by_two</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T one_by_two_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Kc_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Kc_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1177:567\')'})"  name="code2model" class="code2model">&lt;S36&gt;/Kc</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Kc_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Kb_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Kb_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1177:566\')'})"  name="code2model" class="code2model">&lt;S36&gt;/Kb</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Kb_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Ka_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Ka_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1177:565\')'})"  name="code2model" class="code2model">&lt;S36&gt;/Ka</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Ka_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Gain_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Gain_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3375\')'})"  name="code2model" class="code2model">&lt;S15&gt;/Gain</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Gain_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.stop_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.stop_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3389\')'})"  name="code2model" class="code2model">&lt;S20&gt;/stop</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T stop_Value;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Out1_Y0">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Out1_Y0
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3294:1206\')'})"  name="code2model" class="code2model">&lt;S48&gt;/Out1</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Out1_Y0;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.theta_e_Y0">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.theta_e_Y0
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3294:1188\')'})"  name="code2model" class="code2model">&lt;S47&gt;/theta_e</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T theta_e_Y0;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Vabc_PU_Y0">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Vabc_PU_Y0
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3396\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Vabc_PU</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Vabc_PU_Y0;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Constant_Value_h">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Constant_Value_h
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1180:76:692:3\')'})"  name="code2model" class="code2model">&lt;S43&gt;/Constant</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Constant_Value_h;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Constant_Value_g">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Constant_Value_g
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1164\')'})"  name="code2model" class="code2model">&lt;S30&gt;/Constant</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Constant_Value_g;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.RampGenerator_gainval">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.RampGenerator_gainval
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3302\')'})"  name="code2model" class="code2model">&lt;S29&gt;/Ramp Generator</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T RampGenerator_gainval;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.RampGenerator_IC">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.RampGenerator_IC
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3302\')'})"  name="code2model" class="code2model">&lt;S29&gt;/Ramp Generator</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T RampGenerator_IC;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.RampGenerator_UpperSat">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.RampGenerator_UpperSat
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3302\')'})"  name="code2model" class="code2model">&lt;S29&gt;/Ramp Generator</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T RampGenerator_UpperSat;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.RampGenerator_LowerSat">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.RampGenerator_LowerSat
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3302\')'})"  name="code2model" class="code2model">&lt;S29&gt;/Ramp Generator</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T RampGenerator_LowerSat;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Vbyf_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Vbyf_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3309\')'})"  name="code2model" class="code2model">&lt;S28&gt;/V-by-f</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Vbyf_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Correction_Factor_sinePWM_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Correction_Factor_sinePWM_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3287\')'})"  name="code2model" class="code2model">&lt;S28&gt;/Correction_Factor_sinePWM</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Correction_Factor_sinePWM_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.BoostVoltage_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.BoostVoltage_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3607\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Boost Voltage</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T BoostVoltage_Value;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Saturation_UpperSat">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Saturation_UpperSat
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3603\')'})"  name="code2model" class="code2model">&lt;S32&gt;/Saturation</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Saturation_UpperSat;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Saturation_LowerSat">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Saturation_LowerSat
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3603\')'})"  name="code2model" class="code2model">&lt;S32&gt;/Saturation</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Saturation_LowerSat;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.sine_table_values_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.sine_table_values_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1180:76:549\')'})"  name="code2model" class="code2model">&lt;S39&gt;/sine_table_values</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T sine_table_values_Value[1][1002];
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.position_increment_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.position_increment_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3312\')'})"  name="code2model" class="code2model">&lt;S28&gt;/position_increment</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T position_increment_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.scaleIn_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.scaleIn_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3294:1202\')'})"  name="code2model" class="code2model">&lt;S31&gt;/scaleIn</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T scaleIn_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.UnitDelay_InitialCondition">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.UnitDelay_InitialCondition
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3294:1187\')'})"  name="code2model" class="code2model">&lt;S31&gt;/Unit Delay</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T UnitDelay_InitialCondition;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.scaleOut_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.scaleOut_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3294:1189\')'})"  name="code2model" class="code2model">&lt;S31&gt;/scaleOut</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T scaleOut_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.convert_pu_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.convert_pu_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1180:76:652\')'})"  name="code2model" class="code2model">&lt;S41&gt;/convert_pu</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T convert_pu_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.indexing_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.indexing_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1180:76:605\')'})"  name="code2model" class="code2model">&lt;S39&gt;/indexing</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T indexing_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.One_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.One_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3301\')'})"  name="code2model" class="code2model">&lt;S29&gt;/One</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T One_Value;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Ramp_Timesec_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Ramp_Timesec_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3305\')'})"  name="code2model" class="code2model">&lt;S27&gt;/Ramp_Time (sec)</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  real32_T Ramp_Timesec_Value;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Gain_Gain_m">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Gain_Gain_m
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3929\')'})"  name="code2model" class="code2model">&lt;S3&gt;/Gain</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  int16_T Gain_Gain_m;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.offset_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.offset_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1180:76:657\')'})"  name="code2model" class="code2model">&lt;S39&gt;/offset</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  int16_T offset_Value[1][4];
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.TmpRTBAtOpenLoopControlInport2_">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.TmpRTBAtOpenLoopControlInport2_
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3279\')'})"  name="code2model" class="code2model">&lt;Root&gt;/Open Loop Control</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  int16_T TmpRTBAtOpenLoopControlInport2_;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.rpm2freq_Gain">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.rpm2freq_Gain
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3314\')'})"  name="code2model" class="code2model">&lt;S27&gt;/rpm2freq</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  int16_T rpm2freq_Gain;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+<div class="programlisting">
+<span>Scaling: </span><code class="usage"><span title="  DataTypeMode: Fixed-point: binary point scaling
+    Signedness: Signed
+    WordLength: 16
+FractionLength: 18
+">sfix16_En18</span></code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Offset_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Offset_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1176:753\')'})"  name="code2model" class="code2model">&lt;S38&gt;/Offset</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  uint16_T Offset_Value;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Switch_Threshold">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Switch_Threshold
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3502:1176:755\')'})"  name="code2model" class="code2model">&lt;S38&gt;/Switch</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  uint16_T Switch_Threshold;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Constant1_Value_a">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Constant1_Value_a
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3583\')'})"  name="code2model" class="code2model">&lt;S19&gt;/Constant1</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  uint16_T Constant1_Value_a;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Switch_Threshold_g">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Switch_Threshold_g
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3585\')'})"  name="code2model" class="code2model">&lt;S19&gt;/Switch</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  uint16_T Switch_Threshold_g;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.NumberIDECU_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.NumberIDECU_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3964\')'})"  name="code2model" class="code2model">&lt;Root&gt;/Number ID ECU</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  uint16_T NumberIDECU_Value;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Delay_InitialCondition">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Delay_InitialCondition
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3294:1210\')'})"  name="code2model" class="code2model">&lt;S47&gt;/Delay</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  boolean_T Delay_InitialCondition;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Constant_Value_a">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Constant_Value_a
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3294:1209\')'})"  name="code2model" class="code2model">&lt;S47&gt;/Constant</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  boolean_T Constant_Value_a;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Constant_Reset_Value">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Constant_Reset_Value
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3294:1216\')'})"  name="code2model" class="code2model">&lt;S31&gt;/Constant_Reset</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  boolean_T Constant_Reset_Value;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.TmpRTBAtDataTypeConversion1Outp">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.TmpRTBAtDataTypeConversion1Outp
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3918\')'})"  name="code2model" class="code2model">&lt;S1&gt;/Data Type Conversion1</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  boolean_T TmpRTBAtDataTypeConversion1Outp;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+<div id="fcn_mcb_open_loop_control_nucleo__P.Constant_Value_hv">
+<h4 class="function">
+mcb_open_loop_control_nucleo__P.Constant_Value_hv
+</h4>
+<span class="description">
+Parameters for <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'mcb_open_loop_control_nucleo_f401re:3959\')'})"  name="code2model" class="code2model">&lt;S6&gt;/Constant</a>
+</span>
+<div class="programlisting">
+<code class="usage">struct {
+  ...
+  uint8_T Constant_Value_hv;
+  ...
+} mcb_open_loop_control_nucleo__P;</code>
+</div>
+</div>
+</section>
+<section id="sec_data_stores">
+<h3>
+3.4 Internal data
+</h3>
+Internal data are variables in the generated code that represent signal data, blocks that have internal states, and data stores. The variable is generated based on a storage class specification and flagged to be measured or not measured while the model code executes in the target environment.<p>
+No global data stores or data stores with non-auto storage classes in the model.
+</p>
+</section>
+
+</td>
+
+</tr>
+
+</table>
+
+<script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script>
+</body>
+
+</html>

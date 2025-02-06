@@ -1,0 +1,22 @@
+-IC:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include
+-IC:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw
+-I"C:/Program Files/MATLAB/R2024b/extern/include"
+-I"C:/Program Files/MATLAB/R2024b/simulink/include"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src/ext_mode/common"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/ert"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/shared/can/src/scanutil"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/scheduler/include"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/xcp/include"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src/ext_mode/serial"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/svd/common/include"
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis.instrset/CMSIS/Core/Include
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include/dsp
+-IC:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/Drivers/STM32F4xx_HAL_Driver/Inc
+-IC:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+-IC:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+-IC:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/Drivers/CMSIS/Include
+-IC:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/Core/Inc
+-IC:/Users/aferreira/Documents/ProjectFOCSTM32/stm32f446re_pmsm_example/stm32g446re_pmsm_example/Core/Inc

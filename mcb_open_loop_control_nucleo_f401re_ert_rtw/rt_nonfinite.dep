@@ -1,0 +1,6 @@
+rt_nonfinite.o: \
+ C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rt_nonfinite.c \
+ C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rtwtypes.h \
+ C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rt_nonfinite.h
+C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rtwtypes.h:
+C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rt_nonfinite.h:

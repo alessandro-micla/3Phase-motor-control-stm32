@@ -1,0 +1,1 @@
+var modelInfo = {model:"mcb_open_loop_control_nucleo_f401re"};var modelHierarchy=[{model:"mcb_open_loop_control_nucleo_f401re",relativePath:"_internal.html",parent:"null"},];var AddCode = true;var ProtectedModel = false;
