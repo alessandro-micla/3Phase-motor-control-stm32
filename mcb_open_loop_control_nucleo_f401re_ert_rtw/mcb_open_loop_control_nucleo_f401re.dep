@@ -2,6 +2,7 @@ mcb_open_loop_control_nucleo_f401re.o: \
  C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/mcb_open_loop_control_nucleo_f401re.c \
  C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/mcb_open_loop_control_nucleo_f401re.h \
  C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rtwtypes.h \
+ C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rt_nonfinite.h \
  C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/stm_can_hal.h \
  C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/Core/Inc/main.h \
  C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -50,6 +51,7 @@ mcb_open_loop_control_nucleo_f401re.o: \
  C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/mw_stm32_types.h \
  C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rtwtypes.h \
  C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/stm_adc_ll.h \
+ C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rtGetNaN.h \
  C:/Program\ Files/MATLAB/R2024b/toolbox/shared/can/src/scanutil/can_message.h \
  C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/MW_target_hardware_resources.h \
  C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/mw_stm32_board_header.h \
@@ -90,6 +92,7 @@ mcb_open_loop_control_nucleo_f401re.o: \
  C:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include/dsp/quaternion_math_functions.h
 C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/mcb_open_loop_control_nucleo_f401re.h:
 C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rtwtypes.h:
+C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rt_nonfinite.h:
 C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/stm_can_hal.h:
 C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/Core/Inc/main.h:
 C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/stm32g446re_pmsm_example/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -138,6 +141,7 @@ C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm3
 C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/mw_stm32_types.h:
 C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rtwtypes.h:
 C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/stm_adc_ll.h:
+C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/rtGetNaN.h:
 C:/Program\ Files/MATLAB/R2024b/toolbox/shared/can/src/scanutil/can_message.h:
 C:/Users/aferreira/Documents/MATLAB/Examples/R2024b/stm32f4discovery/OpenLoopControlUsingSTM32F4xxBasedExample/mcb_open_loop_control_nucleo_f401re_ert_rtw/MW_target_hardware_resources.h:
 C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/mw_stm32_board_header.h:

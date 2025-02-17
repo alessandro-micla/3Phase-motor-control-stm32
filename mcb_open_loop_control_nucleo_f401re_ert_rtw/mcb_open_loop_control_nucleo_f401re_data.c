@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'mcb_open_loop_control_nucleo_f401re'.
  *
- * Model version                  : 9.0
+ * Model version                  : 9.4
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Wed Feb  5 17:10:38 2025
+ * C/C++ source code generated on : Sun Feb 16 20:00:16 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -26,30 +26,10 @@ P_mcb_open_loop_control_nucle_T mcb_open_loop_control_nucleo__P = {
    */
   5.0E-5F,
 
-  /* Mask Parameter: BitwiseOR1_BitMask
-   * Referenced by: '<S2>/Bitwise OR1'
-   */
-  65280U,
-
   /* Mask Parameter: BitwiseOR_BitMask
-   * Referenced by: '<S2>/Bitwise OR'
+   * Referenced by: '<S6>/Bitwise OR'
    */
   255U,
-
-  /* Expression: 0
-   * Referenced by: '<S49>/Uniform Random Number'
-   */
-  0.0,
-
-  /* Expression: 200
-   * Referenced by: '<S49>/Uniform Random Number'
-   */
-  200.0,
-
-  /* Expression: 0
-   * Referenced by: '<S49>/Uniform Random Number'
-   */
-  0.0,
 
   /* Expression: single(100)
    * Referenced by: '<S15>/Constant1'
@@ -451,10 +431,10 @@ P_mcb_open_loop_control_nucle_T mcb_open_loop_control_nucleo__P = {
    */
   0U,
 
-  /* Computed Parameter: NumberIDECU_Value
-   * Referenced by: '<Root>/Number ID ECU'
+  /* Computed Parameter: NumberIDECU1_Value
+   * Referenced by: '<Root>/Number ID ECU1'
    */
-  2555U,
+  2598U,
 
   /* Computed Parameter: Delay_InitialCondition
    * Referenced by: '<S47>/Delay'
@@ -476,8 +456,8 @@ P_mcb_open_loop_control_nucle_T mcb_open_loop_control_nucleo__P = {
    */
   false,
 
-  /* Computed Parameter: Constant_Value_hv
-   * Referenced by: '<S6>/Constant'
+  /* Computed Parameter: NumberControlSafety_Value
+   * Referenced by: '<Root>/Number Control Safety'
    */
   55U
 };

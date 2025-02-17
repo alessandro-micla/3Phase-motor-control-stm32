@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'mcb_open_loop_control_nucleo_f401re'.
  *
- * Model version                  : 9.0
+ * Model version                  : 9.4
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Wed Feb  5 17:10:38 2025
+ * C/C++ source code generated on : Sun Feb 16 20:00:16 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -70,7 +70,7 @@ preprocessor word size checks.
 #endif
 
 /* Skipping ulong_long/long_long check: insufficient preprocessor integer range. */
-extern real_T rt_urand_Upu32_Yd_f_pw_snf(uint32_T *u);
+extern real_T rt_roundd_snf(real_T u);
 
 #endif                      /* mcb_open_loop_control_nucleo_f401re_private_h_ */
 

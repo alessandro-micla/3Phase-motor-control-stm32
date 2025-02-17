@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'mcb_open_loop_control_nucleo_f401re'.
  *
- * Model version                  : 9.0
+ * Model version                  : 9.4
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Wed Feb  5 17:10:38 2025
+ * C/C++ source code generated on : Sun Feb 16 20:00:16 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -21,7 +21,9 @@
 #define mcb_open_loop_control_nucleo_f401re_h_
 #ifndef mcb_open_loop_control_nucleo_f401re_COMMON_INCLUDES_
 #define mcb_open_loop_control_nucleo_f401re_COMMON_INCLUDES_
+#include <time.h>
 #include "rtwtypes.h"
+#include "rt_nonfinite.h"
 #include "math.h"
 #include "string.h"
 #include "stm_can_hal.h"
@@ -31,6 +33,7 @@
 #include "mw_stm32_nvic.h"
 #include "mcb_open_loop_control_nucleo_f401re_types.h"
 #include <string.h>
+#include "rtGetNaN.h"
 #include <stddef.h>
 #include "can_message.h"
 #include "MW_target_hardware_resources.h"
@@ -49,7 +52,6 @@
 /* Block signals (default storage) */
 typedef struct {
   CANMsg CANRead;                      /* '<S1>/CAN Read' */
-  real_T UniformRandomNumber;          /* '<S49>/Uniform Random Number' */
   real32_T Input;                      /* '<S48>/Input' */
   int16_T TmpRTBAtOpenLoopControlInport2;/* '<Root>/CONTROL RPM AND DIRECTION' */
   uint8_T CANUnpack[4];                /* '<S1>/CAN Unpack' */
@@ -62,13 +64,19 @@ typedef struct {
   stm32cube_blocks_CANWrite_mcb_T obj_h;/* '<S2>/CAN Write' */
   stm32cube_blocks_AnalogInput__T obj_k;/* '<S18>/Analog to Digital Converter' */
   stm32cube_blocks_PWMOutput_mc_T obj_f;/* '<S26>/PWM Output' */
+  real_T r;                            /* '<S49>/MATLAB Function' */
   real32_T RampGenerator_DSTATE;       /* '<S29>/Ramp Generator' */
   real32_T UnitDelay_DSTATE;           /* '<S31>/Unit Delay' */
+  uint32_T method;                     /* '<S49>/MATLAB Function' */
+  uint32_T state[625];                 /* '<S49>/MATLAB Function' */
+  uint32_T state_e[2];                 /* '<S49>/MATLAB Function' */
+  uint32_T state_k;                    /* '<S49>/MATLAB Function' */
   int_T CANUnpack_ModeSignalID;        /* '<S1>/CAN Unpack' */
   int_T CANUnpack_StatusPortID;        /* '<S1>/CAN Unpack' */
   volatile int16_T TmpRTBAtOpenLoopControlInport2_;/* synthesized block */
   boolean_T Delay_DSTATE;              /* '<S47>/Delay' */
   volatile boolean_T TmpRTBAtDataTypeConversion1Outp;/* synthesized block */
+  boolean_T r_not_empty;               /* '<S49>/MATLAB Function' */
 } DW_mcb_open_loop_control_nucl_T;
 
 /* Parameters (default storage) */
@@ -76,20 +84,8 @@ struct P_mcb_open_loop_control_nucle_T_ {
   real32_T Ts;                         /* Variable: Ts
                                         * Referenced by: '<S29>/Sample_Time'
                                         */
-  uint16_T BitwiseOR1_BitMask;         /* Mask Parameter: BitwiseOR1_BitMask
-                                        * Referenced by: '<S2>/Bitwise OR1'
-                                        */
   uint16_T BitwiseOR_BitMask;          /* Mask Parameter: BitwiseOR_BitMask
-                                        * Referenced by: '<S2>/Bitwise OR'
-                                        */
-  real_T UniformRandomNumber_Minimum;  /* Expression: 0
-                                        * Referenced by: '<S49>/Uniform Random Number'
-                                        */
-  real_T UniformRandomNumber_Maximum;  /* Expression: 200
-                                        * Referenced by: '<S49>/Uniform Random Number'
-                                        */
-  real_T UniformRandomNumber_Seed;     /* Expression: 0
-                                        * Referenced by: '<S49>/Uniform Random Number'
+                                        * Referenced by: '<S6>/Bitwise OR'
                                         */
   real32_T Constant1_Value;            /* Expression: single(100)
                                         * Referenced by: '<S15>/Constant1'
@@ -216,8 +212,8 @@ struct P_mcb_open_loop_control_nucle_T_ {
   uint16_T Switch_Threshold_g;         /* Computed Parameter: Switch_Threshold_g
                                         * Referenced by: '<S19>/Switch'
                                         */
-  uint16_T NumberIDECU_Value;          /* Computed Parameter: NumberIDECU_Value
-                                        * Referenced by: '<Root>/Number ID ECU'
+  uint16_T NumberIDECU1_Value;         /* Computed Parameter: NumberIDECU1_Value
+                                        * Referenced by: '<Root>/Number ID ECU1'
                                         */
   boolean_T Delay_InitialCondition;/* Computed Parameter: Delay_InitialCondition
                                     * Referenced by: '<S47>/Delay'
@@ -232,9 +228,10 @@ struct P_mcb_open_loop_control_nucle_T_ {
                           /* Computed Parameter: TmpRTBAtDataTypeConversion1Outp
                            * Referenced by:
                            */
-  uint8_T Constant_Value_hv;           /* Computed Parameter: Constant_Value_hv
-                                        * Referenced by: '<S6>/Constant'
-                                        */
+  uint8_T NumberControlSafety_Value;
+                                /* Computed Parameter: NumberControlSafety_Value
+                                 * Referenced by: '<Root>/Number Control Safety'
+                                 */
 };
 
 /* Real-time Model Data Structure */
@@ -302,6 +299,7 @@ extern "C"
  * Block '<S16>/Inverter' : Unused code path elimination
  * Block '<S16>/Number of pole pairs' : Unused code path elimination
  * Block '<S16>/PWM Frequency' : Unused code path elimination
+ * Block '<S49>/Display' : Unused code path elimination
  * Block '<S8>/Modify Scaling Only' : Eliminate redundant data type conversion
  * Block '<S9>/Modify Scaling Only' : Eliminate redundant data type conversion
  * Block '<S39>/Get_FractionVal' : Eliminate redundant data type conversion
@@ -327,7 +325,7 @@ extern "C"
  * '<S3>'   : 'mcb_open_loop_control_nucleo_f401re/CONTROL RPM AND DIRECTION'
  * '<S4>'   : 'mcb_open_loop_control_nucleo_f401re/Hardware Interrupt'
  * '<S5>'   : 'mcb_open_loop_control_nucleo_f401re/Open Loop Control'
- * '<S6>'   : 'mcb_open_loop_control_nucleo_f401re/Safety code generator'
+ * '<S6>'   : 'mcb_open_loop_control_nucleo_f401re/Subsystem'
  * '<S7>'   : 'mcb_open_loop_control_nucleo_f401re/CAN-BUS READ/Bit Concat'
  * '<S8>'   : 'mcb_open_loop_control_nucleo_f401re/CAN-BUS READ/Extract Bits'
  * '<S9>'   : 'mcb_open_loop_control_nucleo_f401re/CAN-BUS READ/Extract Bits1'
@@ -370,7 +368,8 @@ extern "C"
  * '<S46>'  : 'mcb_open_loop_control_nucleo_f401re/Open Loop Control/Control_System/VabcCalc/3-Phase Sine Voltage Generator/Sine-Cosine Lookup/Sine-Cosine Lookup/datatype/datatype no change'
  * '<S47>'  : 'mcb_open_loop_control_nucleo_f401re/Open Loop Control/Control_System/VabcCalc/Position Generator/Accumulate'
  * '<S48>'  : 'mcb_open_loop_control_nucleo_f401re/Open Loop Control/Control_System/VabcCalc/Position Generator/Accumulate/Subsystem'
- * '<S49>'  : 'mcb_open_loop_control_nucleo_f401re/Safety code generator/Initialize Function'
+ * '<S49>'  : 'mcb_open_loop_control_nucleo_f401re/Subsystem/Safety code generator'
+ * '<S50>'  : 'mcb_open_loop_control_nucleo_f401re/Subsystem/Safety code generator/MATLAB Function'
  */
 #endif                              /* mcb_open_loop_control_nucleo_f401re_h_ */
 

@@ -6,6 +6,8 @@ can_datatype_ground.o
 ert_main.o
 mcb_open_loop_control_nucleo_f401re.o
 mcb_open_loop_control_nucleo_f401re_data.o
+rtGetNaN.o
+rt_nonfinite.o
 overrideHALDelay.o
 platform_timer.o
 SysTickScheduler.o
